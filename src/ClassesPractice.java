@@ -21,10 +21,10 @@ public class ClassesPractice {
             System.out.println(horseSentence + hasNotBeenFed);
         }
 
+        // horseSpeak() method called
+        horse.horseSpeak();
 
 
-
-//        animals.DogSpeak();
 
 //        String catSays = animals.catSpeak;
 //        System.out.println(catSays);

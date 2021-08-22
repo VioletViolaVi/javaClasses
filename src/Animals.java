@@ -12,7 +12,7 @@ public class Animals {
         this.hasBeenFed = hasBeenFed;
     }
 
-//    public void DogSpeak(){
-//        System.out.println("Woof! Woof!");
-//    }
+    public void horseSpeak(){
+        System.out.println("Neigh! Neigh!");
+    }
 }
