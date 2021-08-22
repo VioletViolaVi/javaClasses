@@ -1,6 +1,6 @@
 public class ClassesPractice {
     public static void main(String[] args) {
-        Animals animals = new Animals();
+        Animals animals = new Animals("horse", 56, true);
         animals.DogSpeak();
 
         String catSays = animals.catSpeak;
