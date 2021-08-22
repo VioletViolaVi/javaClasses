@@ -17,4 +17,8 @@ public class Animals {
     public void cowSpeak(){
         System.out.println("Moo! Moo!");
     }
+
+    public void catSpeak(){
+        System.out.println("Meow! Meow!");
+    }
 }

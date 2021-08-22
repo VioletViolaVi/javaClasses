@@ -25,6 +25,7 @@ public class ClassesPractice {
         // horseSpeak() method called
         horse.horseSpeak();
 
+
         System.out.println("\n");
 
 
@@ -48,8 +49,14 @@ public class ClassesPractice {
         System.out.println(cowSentence + cowEatenOrNot);
 
 
+        System.out.println("\n");
 
-//        String catSays = animals.catSpeak;
-//        System.out.println(catSays);
+
+        /* CATS */
+        // another instance
+        Animals cat = new Animals("cat", 2, false);
+
+        // called method on cat instance
+        cat.catSpeak();
     }
 }
