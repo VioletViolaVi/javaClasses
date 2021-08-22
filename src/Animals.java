@@ -1,6 +1,6 @@
 public class Animals {
-    String catSpeak = "Meow! Meow!";
-    int cowNums = 47;
+//    String catSpeak = "Meow! Meow!";
+//    int cowNums = 47;
 
     String animalType;
     int numOfAnimals;
@@ -12,7 +12,7 @@ public class Animals {
         this.hasBeenFed = hasBeenFed;
     }
 
-    public void DogSpeak(){
-        System.out.println("Woof! Woof!");
-    }
+//    public void DogSpeak(){
+//        System.out.println("Woof! Woof!");
+//    }
 }
