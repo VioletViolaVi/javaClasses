@@ -1,6 +1,4 @@
 public class Animals {
-//    String catSpeak = "Meow! Meow!";
-//    int cowNums = 47;
 
     String animalType;
     int numOfAnimals;
@@ -14,5 +12,9 @@ public class Animals {
 
     public void horseSpeak(){
         System.out.println("Neigh! Neigh!");
+    }
+
+    public void cowSpeak(){
+        System.out.println("Moo! Moo!");
     }
 }
