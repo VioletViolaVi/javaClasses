@@ -1,5 +1,6 @@
 public class ClassesPractice {
     public static void main(String[] args) {
+        /* ANIMAlS CLASS */
         /* HORSES */
         // instantiate horse class
         Horse horse = new Horse();
@@ -44,8 +45,10 @@ public class ClassesPractice {
 
         System.out.println("\n");
 
+        /* FOODS CLASS */
         /* PIZZA */
         Pizza pizza = new Pizza();
+        System.out.println(pizza.howMuchEach());
         System.out.println(pizza.orderedOrNot());
         System.out.println(pizza.informCustomerOnTotalPrice());
         System.out.println(pizza.sayGoodbye());
@@ -54,14 +57,17 @@ public class ClassesPractice {
 
         /* HOT DOG */
         HotDog hotDog = new HotDog();
+        System.out.println(hotDog.howMuchEach());
         System.out.println(hotDog.orderedOrNot()); // only this statement as boolean is false for this example
+        System.out.println(hotDog.informCustomerOnTotalPrice());
+        System.out.println(hotDog.sayGoodbye());
 
         System.out.println("\n");
 
         /* ICE CREAM */
         IceCream iceCream = new IceCream();
-        System.out.println(iceCream.orderedOrNot());
         System.out.println(iceCream.howMuchEach());
+        System.out.println(iceCream.orderedOrNot());
         System.out.println(iceCream.informCustomerOnTotalPrice());
         System.out.println(iceCream.sayGoodbye());
     }

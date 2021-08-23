@@ -7,12 +7,23 @@ public class Foods {
     double singularPrice;
     double totalCost;
 
-    Foods(String foodName, boolean chosen, int quantity, double singularPrice){
+    Foods(String foodName, boolean chosen, int quantity, double singularPrice) {
         this.foodName = foodName;
         this.chosen = chosen;
         this.quantity = quantity;
         this.singularPrice = singularPrice;
         System.out.println("Hello and Welcome to Foods Restaurant!");
+    }
+
+    public String howMuchEach() {
+        String costEach;
+        if (this.chosen) {
+            // capitalises first letter of food item
+            costEach = this.foodName.substring(0, 1).toUpperCase() + this.foodName.substring(1) +  "'s cost £" + this.singularPrice + " each.";
+        } else {
+            costEach = "Which food item would you like to know the cost of?";
+        }
+        return costEach;
     }
 
     public String orderedOrNot() {
@@ -30,28 +41,23 @@ public class Foods {
         return this.totalCost;
     }
 
-    public String howMuchEach(){
-        String costEach = "";
-        if (this.chosen) {
-            // capitalises first letter of food item
-            costEach = this.foodName.substring(0, 1).toUpperCase() + this.foodName.substring(1) +  "'s cost " + this.singularPrice + " each.";
-        }
-        return costEach;
-    }
-
     public String informCustomerOnTotalPrice() {
-        String statement = "";
+        String statement;
         DecimalFormat decimalFormat = new DecimalFormat("##.00");
         if (this.chosen) {
             statement = "That will be £" + decimalFormat.format(totalCost()); // makes number have 2 decimal places
+        } else {
+            statement = "There is no cost as you have not ordered!";
         }
         return statement;
     }
 
     public String sayGoodbye() {
-        String goodbye = "";
+        String goodbye;
         if (this.chosen) {
             goodbye = "Thank you and goodbye!";
+        } else {
+            goodbye = "If you're sure you don't want to order then... Thank you and goodbye!";
         }
         return goodbye;
     }

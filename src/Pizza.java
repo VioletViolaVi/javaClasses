@@ -1,5 +1,5 @@
 public class Pizza extends Foods {
-    Pizza(){
+    Pizza() {
         super("pizza", true, 2, 2.58);
     }
 }
