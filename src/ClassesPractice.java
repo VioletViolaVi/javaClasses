@@ -47,6 +47,8 @@ public class ClassesPractice {
         /* PIZZA */
         Pizza pizza = new Pizza();
         System.out.println(pizza.orderedOrNot());
+        System.out.println(pizza.informCustomerOnPrice());
+        System.out.println(pizza.sayGoodbye());
 
 
         System.out.println(pizza.foodName);
