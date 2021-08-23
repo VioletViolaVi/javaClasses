@@ -1,54 +1,55 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ClassesPractice {
     public static void main(String[] args) {
         /* ANIMAlS CLASS */
-        /* HORSES */
-        // instantiate horse class
-        Horse horse = new Horse();
-        // call & print methods from horse class
-        horse.horseSpeak();
-        horse.animalSentence();
-        System.out.println(horse.animalFedOrNot());
 
-        System.out.println("\n");
-
-        /* COWS */
-        // cow class instantiated
-        Cow cow = new Cow();
-        // cow methods called and/or printed
-        cow.cowSpeak();
-        cow.animalSentence();
-        System.out.println(cow.animalFedOrNot());
-
-        System.out.println("\n");
-
-        /* CATS */
-        // made Cat class inherit from Animal class
+        // instantiate instances of the different animal child classes
         Cat cat = new Cat();
-        // called & printed methods on cat instance
+        Horse horse = new Horse();
+        Cow cow = new Cow();
+        Pig pig = new Pig();
+
+        // place each animal instance in an arraylist
+        ArrayList<Animals> allAnimalClasses = new ArrayList<>();
+        allAnimalClasses.add(cat);
+        allAnimalClasses.add(horse);
+        allAnimalClasses.add(cow);
+        allAnimalClasses.add(pig);
+
+        // iterate through all classes
+        for (Animals animal : allAnimalClasses) {
+            animal.animalSentence();
+            System.out.println(animal.animalFedOrNot());
+        }
+
+        // calling out .speak() methods
         cat.catSpeak();
-        cat.animalSentence();
-        System.out.println(cat.animalFedOrNot());
+        horse.horseSpeak();
+        cow.cowSpeak();
+        pig.pigSpeak();
 
-        System.out.println("\n");
+        // getting animal variables
+        System.out.println(cat.animalType);
+        System.out.println(cat.numOfAnimals);
+        System.out.println(cat.hasBeenFed);
 
-        /* PIGS */
-        // instantiate pig object from Pig class which is inheriting from Animal class
-        Pig pigs = new Pig();
-        // call and/or print pig class methods
-        pigs.pigSpeak();
-        pigs.animalSentence();
-        System.out.println(pigs.animalFedOrNot());
-        // print out its values of inherited variables
-        System.out.println(pigs.animalType);
-        System.out.println(pigs.numOfAnimals);
-        System.out.println(pigs.hasBeenFed);
+        System.out.println(horse.animalType);
+        System.out.println(horse.numOfAnimals);
+        System.out.println(horse.hasBeenFed);
+
+        System.out.println(cow.animalType);
+        System.out.println(cow.numOfAnimals);
+        System.out.println(cow.hasBeenFed);
+
+        System.out.println(pig.animalType);
+        System.out.println(pig.numOfAnimals);
+        System.out.println(pig.hasBeenFed);
 
         System.out.println("\n");
 
         /* FOODS CLASS */
+
         // instantiating & adding food classes to arraylist
         Pizza pizza = new Pizza();
         HotDog hotDog = new HotDog();
