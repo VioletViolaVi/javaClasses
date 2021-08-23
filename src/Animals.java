@@ -23,11 +23,6 @@ public class Animals {
         }
         return fedOrNot;
     }
-
-    public void horseSpeak(){
-        System.out.println("Neigh! Neigh!");
-    }
-
     public void cowSpeak(){
         System.out.println("Moo! Moo!");
     }

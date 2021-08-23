@@ -2,28 +2,12 @@ public class ClassesPractice {
     public static void main(String[] args) {
 
         /* HORSES */
-        // instance of Animal class w/ its arguments
-        Animals horse = new Animals("horse", 12, false);
-
-        // arguments called from Animals class
-        System.out.println(horse.animalType);
-        System.out.println(horse.numOfAnimals);
-        System.out.println(horse.hasBeenFed);
-
-        // concat called arguments with own strings
-        String horseSentence = "On my farm I have " + horse.numOfAnimals + " " + horse.animalType + "'s.";
-
-        // if/elseif based on boolean value
-        if (horse.hasBeenFed) {
-            String horseHasEaten = " They have all been fed.";
-            System.out.println(horseSentence + horseHasEaten);
-        } else {
-            String horseHasNotEaten = " They have NOT been fed.";
-            System.out.println(horseSentence + horseHasNotEaten);
-        }
-
-        // horseSpeak() method called
+        // instantiate horse class
+        Horse horse = new Horse();
+        // call & print methods from horse class
         horse.horseSpeak();
+        horse.animalSentence();
+        System.out.println(horse.animalFedOrNot());
 
 
         System.out.println("\n");
@@ -67,6 +51,7 @@ public class ClassesPractice {
         /* PIGS */
         // instantiate pig object from Pig class which is inheriting from Animal class
         Pig pigs = new Pig();
+        // print out its values of inherited variables
         System.out.println(pigs.animalType);
         System.out.println(pigs.numOfAnimals);
         System.out.println(pigs.hasBeenFed);
