@@ -41,5 +41,9 @@ public class ClassesPractice {
         System.out.println(pigs.animalType);
         System.out.println(pigs.numOfAnimals);
         System.out.println(pigs.hasBeenFed);
+
+        System.out.println("\n");
+
+        /* FOODS */
     }
 }

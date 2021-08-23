@@ -12,7 +12,6 @@ public class Foods {
         this.chosen = chosen;
         this.quantity = quantity;
         this.singularPrice = singularPrice;
-        this.totalCost = quantity * singularPrice;
         System.out.println("Here is your complete order!");
     }
 
@@ -26,4 +25,8 @@ public class Foods {
         return order;
     }
 
+    public double totalCost() {
+        this.totalCost = quantity * singularPrice;
+        return this.totalCost;
+    }
 }
