@@ -58,5 +58,16 @@ public class ClassesPractice {
 
         // called method on cat instance
         cat.catSpeak();
+
+
+        System.out.println("\n");
+
+
+        /* PIGS */
+        // instantiate pig object from Pig class which is inheriting from Animal class
+        Pig pigs = new Pig();
+        System.out.println(pigs.animalType);
+        System.out.println(pigs.numOfAnimals);
+        System.out.println(pigs.hasBeenFed);
     }
 }
