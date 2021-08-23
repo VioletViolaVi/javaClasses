@@ -1,5 +1,4 @@
 public class Animals {
-
     String animalType;
     int numOfAnimals;
     boolean hasBeenFed;

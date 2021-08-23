@@ -1,5 +1,4 @@
 public class Pig extends Animals {
-
     Pig () {
         // inheriting constructor but with pig's own arguments via super()
         super("pig", 3, false);
@@ -11,6 +10,7 @@ public class Pig extends Animals {
             this.hasBeenFed = false;
         */
     }
+
     public void pigSpeak() {
         System.out.println("Oink! Oink!");
     }

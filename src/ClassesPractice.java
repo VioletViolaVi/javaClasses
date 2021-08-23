@@ -1,6 +1,5 @@
 public class ClassesPractice {
     public static void main(String[] args) {
-
         /* HORSES */
         // instantiate horse class
         Horse horse = new Horse();
@@ -9,9 +8,7 @@ public class ClassesPractice {
         horse.animalSentence();
         System.out.println(horse.animalFedOrNot());
 
-
         System.out.println("\n");
-
 
         /* COWS */
         // cow class instantiated
@@ -21,9 +18,7 @@ public class ClassesPractice {
         cow.animalSentence();
         System.out.println(cow.animalFedOrNot());
 
-
         System.out.println("\n");
-
 
         /* CATS */
         // made Cat class inherit from Animal class
@@ -33,9 +28,7 @@ public class ClassesPractice {
         cat.animalSentence();
         System.out.println(cat.animalFedOrNot());
 
-
         System.out.println("\n");
-
 
         /* PIGS */
         // instantiate pig object from Pig class which is inheriting from Animal class

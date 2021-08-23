@@ -6,5 +6,4 @@ public class Horse extends Animals{
     public void horseSpeak(){
         System.out.println("Neigh! Neigh!");
     }
-
 }
