@@ -50,10 +50,18 @@ public class ClassesPractice {
         System.out.println(pizza.informCustomerOnPrice());
         System.out.println(pizza.sayGoodbye());
 
+        System.out.println("\n");
 
-        System.out.println(pizza.foodName);
-        System.out.println(pizza.chosen);
-        System.out.println(pizza.quantity);
-        System.out.println(pizza.singularPrice);
+        /* HOT DOG */
+        HotDog hotDog = new HotDog();
+        System.out.println(hotDog.orderedOrNot()); // only this statement as boolean is false for this example
+
+        System.out.println("\n");
+
+        /* ICE CREAM */
+        IceCream iceCream = new IceCream();
+        System.out.println(iceCream.orderedOrNot());
+        System.out.println(iceCream.informCustomerOnPrice());
+        System.out.println(iceCream.sayGoodbye());
     }
 }

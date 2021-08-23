@@ -10,7 +10,7 @@ public class Foods {
         this.chosen = chosen;
         this.quantity = quantity;
         this.singularPrice = singularPrice;
-        System.out.println("Hello and Welcome to the Foods Restaurant!");
+        System.out.println("Hello and Welcome to Foods Restaurant!");
     }
 
     public String orderedOrNot() {
@@ -18,7 +18,7 @@ public class Foods {
         if (this.chosen) {
             order = "You've chosen to buy " + this.quantity + " " + this.foodName + "'s.";
         } else {
-            order = "Please place your order!";
+            order = "You have ordered nothing. Please place your order!";
         }
         return order;
     }
@@ -29,7 +29,11 @@ public class Foods {
     }
 
     public String informCustomerOnPrice() {
-        return "That will be £" + totalCost();
+        String statement = "";
+        if (this.chosen) {
+            statement = "That will be £" + totalCost();
+        }
+        return statement;
     }
 
     public String sayGoodbye() {
