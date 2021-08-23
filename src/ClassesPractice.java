@@ -6,15 +6,15 @@ public class ClassesPractice {
 
         // instantiate instances of the different animal child classes
         Cat cat = new Cat();
-        Horse horse = new Horse();
         Cow cow = new Cow();
+        Horse horse = new Horse();
         Pig pig = new Pig();
 
         // place each animal instance in an arraylist
         ArrayList<Animals> allAnimalClasses = new ArrayList<>();
         allAnimalClasses.add(cat);
-        allAnimalClasses.add(horse);
         allAnimalClasses.add(cow);
+        allAnimalClasses.add(horse);
         allAnimalClasses.add(pig);
 
         // iterate through all classes
@@ -23,11 +23,17 @@ public class ClassesPractice {
             System.out.println(animal.animalFedOrNot());
         }
 
-        // calling out .speak() methods
-        cat.catSpeak();
-        horse.horseSpeak();
-        cow.cowSpeak();
-        pig.pigSpeak();
+        System.out.println("\n");
+        // calling out .speak() methods using ENHANCED switch statements
+        for (Animals animal : allAnimalClasses) {
+            switch (animal.animalType) {
+                case "cat" -> cat.catSpeak();
+                case "cow" -> cow.cowSpeak();
+                case "horse" -> horse.horseSpeak();
+                case "pig" -> pig.pigSpeak();
+                default -> System.out.println("Not one of the animal classes!");
+            }
+        }
 
         // getting animal variables
         System.out.println(cat.animalType);

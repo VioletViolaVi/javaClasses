@@ -1,9 +1,9 @@
-public class Cat extends Animals{
+public class Cat extends Animals {
     Cat() {
         super("cat", 2, false);
     }
 
-    public void catSpeak(){
+    public void catSpeak() {
         System.out.println("Meow! Meow!");
     }
 }
