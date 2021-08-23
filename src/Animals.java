@@ -23,7 +23,4 @@ public class Animals {
         }
         return fedOrNot;
     }
-    public void cowSpeak(){
-        System.out.println("Moo! Moo!");
-    }
 }

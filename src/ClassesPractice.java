@@ -14,23 +14,12 @@ public class ClassesPractice {
 
 
         /* COWS */
-        // DIFFERENT instance of Animal class
-        Animals cow = new Animals("cow", 47, true);
-
-        // concat called arguments with own strings
-        String cowSentence = "On my farm I have " + cow.numOfAnimals + " " + cow.animalType + "'s.";
-
-        // cowSpeak() method called
+        // cow class instantiated
+        Cow cow = new Cow();
+        // cow methods called and/or printed
         cow.cowSpeak();
-
-        // if/elseif based on boolean
-        String cowEatenOrNot;
-        if (cow.hasBeenFed) {
-            cowEatenOrNot = " The cows have been fed!";
-        } else {
-            cowEatenOrNot = " The cows have NOT been fed!";
-        }
-        System.out.println(cowSentence + cowEatenOrNot);
+        cow.animalSentence();
+        System.out.println(cow.animalFedOrNot());
 
 
         System.out.println("\n");
