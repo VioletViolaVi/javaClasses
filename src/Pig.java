@@ -3,11 +3,11 @@ public class Pig extends Animals {
         // inheriting constructor but with pig's own arguments via super()
         super("pig", 3, false);
         /*
-            Or u can use "this" keyword:
-            - super() is called secretly b4 the below code if not written
+            - or u can use "this" keyword i.e:
             this.animalType = "pig";
             this.numOfAnimals = 3;
             this.hasBeenFed = false;
+            - super() is called secretly b4 the above code if not written
         */
     }
 
