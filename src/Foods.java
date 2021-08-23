@@ -12,6 +12,9 @@ public class Foods {
         this.chosen = chosen;
         this.quantity = quantity;
         this.singularPrice = singularPrice;
+    }
+
+    public void greeting() {
         System.out.println("Hello and Welcome to Foods Restaurant!");
     }
 
