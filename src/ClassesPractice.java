@@ -53,11 +53,12 @@ public class ClassesPractice {
 
 
         /* CATS */
-        // another instance
-        Animals cat = new Animals("cat", 2, false);
-
-        // called method on cat instance
+        // made Cat class inherit from Animal class
+        Cat cat = new Cat();
+        // called & printed methods on cat instance
         cat.catSpeak();
+        cat.animalSentence();
+        System.out.println(cat.animalFedOrNot());
 
 
         System.out.println("\n");

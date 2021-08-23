@@ -10,15 +10,25 @@ public class Animals {
         this.hasBeenFed = hasBeenFed;
     }
 
+    public void animalSentence(){
+        System.out.print("On my farm I have " + this.numOfAnimals + " " + this.animalType + "'s.");
+    }
+
+    public String animalFedOrNot(){
+        String fedOrNot;
+        if (this.hasBeenFed) {
+            fedOrNot = " The " + this.animalType + "'s HAVE been fed!";
+        } else {
+            fedOrNot = " The " + this.animalType + "'s have NOT been fed!";
+        }
+        return fedOrNot;
+    }
+
     public void horseSpeak(){
         System.out.println("Neigh! Neigh!");
     }
 
     public void cowSpeak(){
         System.out.println("Moo! Moo!");
-    }
-
-    public void catSpeak(){
-        System.out.println("Meow! Meow!");
     }
 }
