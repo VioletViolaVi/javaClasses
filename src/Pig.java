@@ -11,4 +11,7 @@ public class Pig extends Animals {
             this.hasBeenFed = false;
         */
     }
+    public void pigSpeak() {
+        System.out.println("Oink! Oink!");
+    }
 }

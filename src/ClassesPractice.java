@@ -40,6 +40,10 @@ public class ClassesPractice {
         /* PIGS */
         // instantiate pig object from Pig class which is inheriting from Animal class
         Pig pigs = new Pig();
+        // call and/or print pig class methods
+        pigs.pigSpeak();
+        pigs.animalSentence();
+        System.out.println(pigs.animalFedOrNot());
         // print out its values of inherited variables
         System.out.println(pigs.animalType);
         System.out.println(pigs.numOfAnimals);
