@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Foods {
     String foodName;
     boolean chosen;
@@ -28,10 +30,20 @@ public class Foods {
         return this.totalCost;
     }
 
-    public String informCustomerOnPrice() {
-        String statement = "";
+    public String howMuchEach(){
+        String costEach = "";
         if (this.chosen) {
-            statement = "That will be £" + totalCost();
+            // capitalises first letter of food item
+            costEach = this.foodName.substring(0, 1).toUpperCase() + this.foodName.substring(1) +  "'s cost " + this.singularPrice + " each.";
+        }
+        return costEach;
+    }
+
+    public String informCustomerOnTotalPrice() {
+        String statement = "";
+        DecimalFormat decimalFormat = new DecimalFormat("##.00");
+        if (this.chosen) {
+            statement = "That will be £" + decimalFormat.format(totalCost()); // makes number have 2 decimal places
         }
         return statement;
     }
