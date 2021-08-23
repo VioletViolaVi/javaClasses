@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class Foods {
     String foodName;
     boolean chosen;
@@ -16,7 +14,7 @@ public class Foods {
     }
 
     public String orderedOrNot() {
-        String order = "";
+        String order;
         if (this.chosen) {
             order = "You've chosen to buy " + this.quantity + " " + this.foodName + "'s.";
         } else {

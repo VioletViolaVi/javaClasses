@@ -44,6 +44,14 @@ public class ClassesPractice {
 
         System.out.println("\n");
 
-        /* FOODS */
+        /* PIZZA */
+        Pizza pizza = new Pizza();
+        System.out.println(pizza.orderedOrNot());
+
+
+        System.out.println(pizza.foodName);
+        System.out.println(pizza.chosen);
+        System.out.println(pizza.quantity);
+        System.out.println(pizza.singularPrice);
     }
 }
