@@ -49,6 +49,7 @@ public class ClassesPractice {
         System.out.println("\n");
 
         /* FOODS CLASS */
+        // instantiating & adding food classes to arraylist
         Pizza pizza = new Pizza();
         HotDog hotDog = new HotDog();
         IceCream iceCream = new IceCream();
@@ -56,35 +57,14 @@ public class ClassesPractice {
         allFoodClasses.add(pizza);
         allFoodClasses.add(hotDog);
         allFoodClasses.add(iceCream);
-        System.out.println(allFoodClasses);
 
-
-//        /* PIZZA */
-//        Pizza pizza = new Pizza();
-//        pizza.greeting();
-//        System.out.println(pizza.howMuchEach());
-//        System.out.println(pizza.orderedOrNot());
-//        System.out.println(pizza.informCustomerOnTotalPrice());
-//        System.out.println(pizza.sayGoodbye());
-//
-//        System.out.println("\n");
-//
-//        /* HOT DOG */
-//        HotDog hotDog = new HotDog();
-//        hotDog.greeting();
-//        System.out.println(hotDog.howMuchEach());
-//        System.out.println(hotDog.orderedOrNot()); // only this statement as boolean is false for this example
-//        System.out.println(hotDog.informCustomerOnTotalPrice());
-//        System.out.println(hotDog.sayGoodbye());
-//
-//        System.out.println("\n");
-//
-//        /* ICE CREAM */
-//        IceCream iceCream = new IceCream();
-//        iceCream.greeting();
-//        System.out.println(iceCream.howMuchEach());
-//        System.out.println(iceCream.orderedOrNot());
-//        System.out.println(iceCream.informCustomerOnTotalPrice());
-//        System.out.println(iceCream.sayGoodbye());
+        // refactored code to iterate through all food child classes
+        for (Foods food : allFoodClasses) {
+            System.out.println(food.howMuchEach());
+            System.out.println(food.orderedOrNot());
+            System.out.println(food.informCustomerOnTotalPrice());
+            System.out.println(food.sayGoodbye());
+            System.out.println("\n");
+        }
     }
 }
