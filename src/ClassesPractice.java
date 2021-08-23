@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class ClassesPractice {
     public static void main(String[] args) {
         /* ANIMAlS CLASS */
-
         // instantiate instances of the different animal child classes
         Cat cat = new Cat();
         Cow cow = new Cow();
@@ -21,11 +20,7 @@ public class ClassesPractice {
         for (Animals animal : allAnimalClasses) {
             animal.animalSentence();
             System.out.println(animal.animalFedOrNot());
-        }
-
-        System.out.println("\n");
-        // calling out .speak() methods using ENHANCED switch statements
-        for (Animals animal : allAnimalClasses) {
+            // calling out .speak() methods using ENHANCED switch statements
             switch (animal.animalType) {
                 case "cat" -> cat.catSpeak();
                 case "cow" -> cow.cowSpeak();
@@ -33,29 +28,14 @@ public class ClassesPractice {
                 case "pig" -> pig.pigSpeak();
                 default -> System.out.println("Not one of the animal classes!");
             }
+            // getting animal variables
+            System.out.println("Type of animal: " + animal.animalType);
+            System.out.println("Number of animals: " + animal.numOfAnimals);
+            System.out.println("Animals have been fed: " + animal.hasBeenFed);
+            System.out.println("\n");
         }
 
-        // getting animal variables
-        System.out.println(cat.animalType);
-        System.out.println(cat.numOfAnimals);
-        System.out.println(cat.hasBeenFed);
-
-        System.out.println(horse.animalType);
-        System.out.println(horse.numOfAnimals);
-        System.out.println(horse.hasBeenFed);
-
-        System.out.println(cow.animalType);
-        System.out.println(cow.numOfAnimals);
-        System.out.println(cow.hasBeenFed);
-
-        System.out.println(pig.animalType);
-        System.out.println(pig.numOfAnimals);
-        System.out.println(pig.hasBeenFed);
-
-        System.out.println("\n");
-
         /* FOODS CLASS */
-
         // instantiating & adding food classes to arraylist
         Pizza pizza = new Pizza();
         HotDog hotDog = new HotDog();
