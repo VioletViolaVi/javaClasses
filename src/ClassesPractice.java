@@ -60,6 +60,7 @@ public class ClassesPractice {
 
         // refactored code to iterate through all food child classes
         for (Foods food : allFoodClasses) {
+            food.greeting();
             System.out.println(food.howMuchEach());
             System.out.println(food.orderedOrNot());
             System.out.println(food.informCustomerOnTotalPrice());
